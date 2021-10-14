@@ -1,13 +1,26 @@
 // @see https://create-react-app.dev/docs/adding-images-fonts-and-files/#adding-svgs
 import logo, { ReactComponent as Logo } from './logo.svg';
-
+import Nav from './components/Nav';
+import Banner from './components/Banner';
+import Articles from './components/Articles';
+import Info from './components/Info';
+import Footer from './components/Footer';
 import './App.scss';
 
 function App() {
 	return (
 		<div className="app">
-			<Logo />
-			{/* Or, import the SVG and use it as an image: <img src={logo} alt="Logo" /> */}
+			<header>
+				<Logo />
+				<Nav />
+			</header>
+			<wrapper>
+				<Banner />
+				<Articles />
+				<Info />
+				<Footer />
+			</wrapper>
+			
 			<p>
 				<strong>Please create your webpage here.</strong>
 			</p>
