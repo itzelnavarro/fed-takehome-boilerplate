@@ -1,23 +1,26 @@
-# designory. Front End Developer - Take Home Test Boilerplate - React Version
+# designory. Front End Developer - Take Home Test Boilerplate - React Version - Itzel Navarro
 
-Convert the attached PDF comp - [**Designory-Project.pdf**](Designory-Project.pdf) - to a webpage using the
-following guidelines:
+*  Explicación del código:
 
-*  Give a detailed explanation of why you coded it the way you did.
-*  No CSS frameworks (e.g. Bootstrap, Bulma, Tailwind).
-*  Please make responsive as best you can, mobile first.
-*  Zip up the the `src/*` folder, or, fork this repository and send us a link to your fork.
+Para desarrollar el proyecto decidí poner en componentes separados cada sección, pensando en que si el proyecto crece o se le incrusta información dinámica, sea más fácil editar ó modificar cada componente.
+Tomando en cuenta lo anterior, generé una carpeta llamada "components" donde se encuentran:
 
-## Installation Instructions
+-Header (Header.js): 
+    Contiene logo y navegación
 
-> Installing this boilerplate assumes you already have [NodeJS](https://nodejs.org/en/) and
-> [npm](https://www.npmjs.com/) installed and configured on your machine.
+-Banner (Banner.js):
+    Contiene el call to action se que muestra en un primer momento
 
-Install all npm modules via:
+ Wrapper:
+    Este wrapper no es un componente, sólo es un contenedor donde incluí el resto de las secciones:
 
-    npm install
+	-Articles (Articles.js):
+        Contiene los 3 artículos que se muestran
+	
+    -Info (Info.js):
+        Contiene el artículo grande
+	
+    -Footer (Footer.js):
+        Contiene el pie de página
     
-    # Or,
-    # yarn install
-
-Then simply run `npm start` or `npm run dev` to start developing!
+Cada uno de los componentes cuenta con su respectiva hoja estilos en SASS (scss) donde se encuentran también los estilos responsive. El nombre de la hoja de estilos es similar al del componente, ejemplo: Header.scss.
