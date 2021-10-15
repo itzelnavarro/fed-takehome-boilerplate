@@ -1,11 +1,24 @@
-// All of these styles are temporary, please feel free to delete them
+*{
+    margin: 0;
+    padding: 0;
+}
 .app {
     font-family: sans-serif;
     font-size: 18px;
-
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 1em;
-
     color: #000;
+
+    #wrapper{
+        padding: 0 30px 30px 30px;
+        margin-top: -80px;
+    }
+}
+
+button{
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #000000;
+    border-radius: 5px;
+    padding: 15px 35px;
+    cursor: pointer;
 }

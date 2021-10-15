@@ -1,0 +1,32 @@
+footer{
+    border-top: 2px solid #000;
+    position: relative;
+    padding: 15px 0;
+
+    p{
+        font-size: 14px;
+        text-transform: uppercase;
+        
+        span{
+            font-weight: bold;
+        }
+
+        &:last-child{
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    footer {
+
+        p:last-child {
+            position: initial;
+            top: initial;
+            right: initial;
+            margin-top: 10px;
+        }
+    }
+}

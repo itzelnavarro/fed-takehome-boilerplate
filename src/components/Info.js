@@ -1,9 +1,10 @@
 import react from "react";
+import './Info.scss';
 
 function Info(){
     return(
         <section id="info">
-            <img />
+            <div className="contImg"></div>
             <div className="infoText">
                 <h2>Get the New Razda template</h2>
                 <h3>The best new way to showcase your work</h3>
