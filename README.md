@@ -1,26 +1,31 @@
 # designory. Front End Developer - Take Home Test Boilerplate - React Version - Itzel Navarro
 
-*  Explicación del código:
+*  Code explanation:
 
-Para desarrollar el proyecto decidí poner en componentes separados cada sección, pensando en que si el proyecto crece o se le incrusta información dinámica, sea más fácil editar ó modificar cada componente.
-Tomando en cuenta lo anterior, generé una carpeta llamada "components" donde se encuentran:
+To develop the project I decided to create separated components for each section. I was thinking it could be helpful in case that the project grows or needs to get implementation of dynamic information, so it will be easier to edit or modify each component.
+Based on the above, I created a folder call "components" where there are: 
 
 -Header (Header.js): 
-    Contiene logo y navegación
+    Contains logo and the render of Nav.js
+
+-Nav (Nav.js):
+    Contains navigation and state change for mobile menu and burger
 
 -Banner (Banner.js):
-    Contiene el call to action se que muestra en un primer momento
+    Contains the "call to action" that is shown at the beginning of the page
 
  Wrapper:
-    Este wrapper no es un componente, sólo es un contenedor donde incluí el resto de las secciones:
+    This wrapper is not a component, it's just a container where I display the rest of the sections:
 
 	-Articles (Articles.js):
-        Contiene los 3 artículos que se muestran
+        Contains 3 articles shown in grid
 	
     -Info (Info.js):
-        Contiene el artículo grande
+        Contains the biggest article
 	
     -Footer (Footer.js):
-        Contiene el pie de página
+        Contains the phone number and copyright
     
-Cada uno de los componentes cuenta con su respectiva hoja estilos en SASS (scss) donde se encuentran también los estilos responsive. El nombre de la hoja de estilos es similar al del componente, ejemplo: Header.scss.
+Each component has its respective stylesheet in SASS (scss) including the responsive styles. The stylesheet name is similar than the component name, example: Header.js = Header.scss
+
+In the case of the navigation, the file Nav.js doesn't have its own stylesheet because I created the styles as a styled-component so it can look and act different in desktop or mobile. It will be necessary to install the library using "npm install styled-components" in your terminal.
